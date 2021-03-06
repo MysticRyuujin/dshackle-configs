@@ -34,3 +34,6 @@ cluster:
     - "chainstack.yaml"
     - "infura.yaml"
     - "rivet.yaml"
+    # Public Nodes
+    - "cloudflare.yaml"
+    - "avado.yaml"
