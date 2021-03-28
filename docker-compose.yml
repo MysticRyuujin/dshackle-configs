@@ -2,7 +2,7 @@ version: '3'
 services:
   dshackle:
     container_name: dshackle
-    image: emeraldpay/dshackle:0.9.1
+    image: emeraldpay/dshackle:0.9.6
     restart: unless-stopped
     volumes:
       - /data/dshackle:/etc/dshackle
