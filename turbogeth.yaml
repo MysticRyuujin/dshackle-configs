@@ -6,6 +6,7 @@ upstreams:
       archive: true
     methods:
       enabled:
+        - name: debug_accountAt
         - name: debug_accountRange
         - name: debug_getModifiedAccountsByHash
         - name: debug_getModifiedAccountsByNumber
@@ -19,6 +20,7 @@ upstreams:
         - name: eth_getBalance
         - name: eth_getBlockByHash
         - name: eth_getBlockByNumber
+        - name: eth_getBlockReceipts
         - name: eth_getBlockTransactionCountByHash
         - name: eth_getBlockTransactionCountByNumber
         - name: eth_getCode
