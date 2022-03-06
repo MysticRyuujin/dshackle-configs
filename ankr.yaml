@@ -1,7 +1,9 @@
 upstreams:
-  - id: avado
+  - id: ankr
     chain: ethereum
     role: fallback
+    options:
+      disable-validation: true
     methods:
       enabled:
         - name: eth_accounts
@@ -47,4 +49,4 @@ upstreams:
     connection:
       ethereum:
         rpc:
-          url: "https://mainnet.eth.cloud.ava.do"
+          url: "https://rpc.ankr.com/eth"

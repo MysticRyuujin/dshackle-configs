@@ -2,9 +2,6 @@ upstreams:
   - id: cloudflare
     chain: ethereum
     role: fallback
-    labels:
-      provider: geth
-      archive: false
     options:
       disable-validation: true
     methods:

@@ -1,9 +1,6 @@
 upstreams:
-  - id: turbogeth
+  - id: erigon
     chain: ethereum
-    labels:
-      provider: turbogeth
-      archive: true
     methods:
       enabled:
         - name: debug_accountAt
@@ -11,10 +8,16 @@ upstreams:
         - name: debug_getModifiedAccountsByHash
         - name: debug_getModifiedAccountsByNumber
         - name: debug_storageRangeAt
+        - name: debug_traceBlockByHash
+        - name: debug_traceBlockByNumber
+        - name: debug_traceCall
         - name: debug_traceTransaction
         - name: eth_blockNumber
         - name: eth_call
+        - name: eth_callBundle
         - name: eth_chainID
+        - name: eth_coinbase
+        - name: eth_createAccessList
         - name: eth_estimateGas
         - name: eth_gasPrice
         - name: eth_getBalance
@@ -35,25 +38,35 @@ upstreams:
         - name: eth_getUncleByBlockNumberAndIndex
         - name: eth_getUncleCountByBlockHash
         - name: eth_getUncleCountByBlockNumber
+        - name: eth_getWork
+        - name: eth_hashrate
         - name: eth_mining
         - name: eth_protocolVersion
         - name: eth_sendRawTransaction
+        - name: eth_submitHashrate
+        - name: eth_submitWork
+        - name: eth_subscribe
         - name: eth_syncing
+        - name: eth_unsubscribe
+        - name: eth_maxPriorityFeePerGas
+        - name: eth_feeHistory
         - name: net_listening
         - name: net_peerCount
         - name: net_version
-        - name: tg_forks
-        - name: tg_getHeaderByHash
-        - name: tg_getHeaderByNumber
-        - name: tg_getLogsByHash
-        - name: tg_issuance
         - name: trace_block
+        - name: trace_call
+        - name: trace_callMany
         - name: trace_filter
         - name: trace_get
         - name: trace_transaction
         - name: web3_clientVersion
         - name: web3_sha3
+        - name: erigon_forks
+        - name: erigon_getHeaderByHash
+        - name: erigon_getHeaderByNumber
+        - name: erigon_getLogsByHash
+        - name: erigon_issuance
     connection:
       ethereum:
         rpc:
-          url: "http://turbogeth:8544"
+          url: "http://erigon:8545"

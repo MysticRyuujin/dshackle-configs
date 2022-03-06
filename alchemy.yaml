@@ -2,9 +2,6 @@ upstreams:
   - id: alchemy
     chain: ethereum
     role: fallback
-    labels:
-      provider: geth
-      archive: true
     options:
       disable-validation: true
     methods:

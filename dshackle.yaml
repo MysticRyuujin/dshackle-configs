@@ -25,10 +25,10 @@ cluster:
       options:
         min-peers: 10
   include:
-    # Local Nodes
+    # Private Nodes
     - "geth.yaml"
     - "nethermind.yaml"
-    - "turbogeth.yaml"
+    - "erigon.yaml"
     # Freemium Nodes
     - "alchemy.yaml"
     - "anyblock.yaml"
@@ -38,3 +38,4 @@ cluster:
     # Public Nodes
     - "cloudflare.yaml"
     - "avado.yaml"
+    - "ankr.yaml"

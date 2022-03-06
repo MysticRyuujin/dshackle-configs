@@ -1,9 +1,6 @@
 upstreams:
   - id: geth
     chain: ethereum
-    labels:
-      provider: geth
-      archive: false
     methods:
       enabled:
         - name: debug_traceBlock

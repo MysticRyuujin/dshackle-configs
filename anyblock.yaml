@@ -2,9 +2,6 @@ upstreams:
   - id: anyblock
     chain: ethereum
     role: fallback
-    labels:
-      provider: openethereum
-      archive: false
     options:
       disable-validation: true
     methods:
