@@ -1,8 +1,10 @@
 upstreams:
   - id: erigon
     chain: ethereum
+    priority: 100
     methods:
       enabled:
+        # Manually Enabled
         - name: debug_accountAt
         - name: debug_accountRange
         - name: debug_getModifiedAccountsByHash
@@ -11,59 +13,32 @@ upstreams:
         - name: debug_traceBlockByHash
         - name: debug_traceBlockByNumber
         - name: debug_traceCall
+        - name: debug_traceCallMany
         - name: debug_traceTransaction
-        - name: eth_blockNumber
-        - name: eth_call
         - name: eth_callBundle
+        - name: eth_callMany
         - name: eth_chainID
-        - name: eth_coinbase
         - name: eth_createAccessList
-        - name: eth_estimateGas
-        - name: eth_gasPrice
-        - name: eth_getBalance
-        - name: eth_getBlockByHash
-        - name: eth_getBlockByNumber
         - name: eth_getBlockReceipts
-        - name: eth_getBlockTransactionCountByHash
-        - name: eth_getBlockTransactionCountByNumber
-        - name: eth_getCode
-        - name: eth_getLogs
-        - name: eth_getStorageAt
-        - name: eth_getTransactionByBlockHashAndIndex
-        - name: eth_getTransactionByBlockNumberAndIndex
-        - name: eth_getTransactionByHash
-        - name: eth_getTransactionCount
-        - name: eth_getTransactionReceipt
-        - name: eth_getUncleByBlockHashAndIndex
-        - name: eth_getUncleByBlockNumberAndIndex
-        - name: eth_getUncleCountByBlockHash
-        - name: eth_getUncleCountByBlockNumber
         - name: eth_getWork
-        - name: eth_hashrate
-        - name: eth_mining
-        - name: eth_protocolVersion
-        - name: eth_sendRawTransaction
         - name: eth_submitHashrate
         - name: eth_submitWork
         - name: eth_subscribe
-        - name: eth_syncing
         - name: eth_unsubscribe
         - name: eth_maxPriorityFeePerGas
-        - name: eth_feeHistory
-        - name: net_listening
-        - name: net_peerCount
-        - name: net_version
         - name: trace_block
         - name: trace_call
         - name: trace_callMany
         - name: trace_filter
         - name: trace_get
         - name: trace_transaction
-        - name: web3_clientVersion
         - name: web3_sha3
         - name: erigon_forks
+        - name: erigon_getBalanceChangesInBlock
+        - name: erigon_getBlockByTimestamp
         - name: erigon_getHeaderByHash
         - name: erigon_getHeaderByNumber
+        - name: erigon_getLogs
         - name: erigon_getLogsByHash
         - name: erigon_issuance
     connection:

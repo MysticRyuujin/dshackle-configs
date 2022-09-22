@@ -2,12 +2,14 @@ version: '3.4'
 services:
   dshackle:
     container_name: dshackle
-    image: emeraldpay/dshackle:0.12.0
+    image: emeraldpay/dshackle:0.13.0
     restart: unless-stopped
     volumes:
       - /etc/dshackle:/etc/dshackle # This should hold all your yaml files
     ports:
       - "8080:8080"
+      - "8081:8081"
+      - "8082:8082"
     environment:
       - ALCHEMY_KEY=
       - ANYBLOCK_KEY=
@@ -16,6 +18,8 @@ services:
       - CHAINSTACK_PASSWORD=
       - INFURA_KEY=
       - RIVET_KEY=
+      - COINBASE_USERNAME=
+      - COINBASE_PASSWORD=
   redis:
     container_name: redis
     image: healthcheck/redis:alpine
