@@ -45,6 +45,7 @@ cluster:
         min-peers: 10
   include:
     # Private Nodes
+    - "besu.yaml"
     - "geth.yaml"
     - "nethermind.yaml"
     - "erigon.yaml"

@@ -1,0 +1,34 @@
+upstreams:
+  - id: besu
+    chain: ethereum
+    priority: 130
+    methods:
+      enabled:
+        # Manually Enabled
+        - name: debug_accountAt
+        - name: debug_accountRange
+        - name: debug_batchSendRawTransaction
+        - name: debug_getBadBlocks
+        - name: debug_standardTraceBlockToFile
+        - name: debug_standardTraceBadBlockToFile
+        - name: debug_storageRangeAt
+        - name: debug_metrics
+        - name: debug_traceTransaction
+        - name: debug_traceBlock
+        - name: debug_traceBlockByHash
+        - name: debug_traceBlockByNumber
+        - name: trace_block
+        - name: trace_call
+        - name: trace_callMany
+        - name: trace_filter
+        - name: trace_get
+        - name: trace_rawTransaction
+        - name: trace_replayBlockTransactions
+        - name: trace_transaction
+        - name: txpool_besuPendingTransactions
+        - name: txpool_besuStatistics
+        - name: txpool_besuTransactions
+    connection:
+      ethereum:
+        rpc:
+          url: "http://besu:8545"
