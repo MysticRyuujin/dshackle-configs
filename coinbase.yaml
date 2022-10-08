@@ -7,7 +7,9 @@ upstreams:
       provider: geth
       archive: false
     options:
-      disable-validation: true
+      disable-validation: false
+      validate-peers: false
+      validate-syncing: true
     methods:
       enabled:
         # Manually Enabled

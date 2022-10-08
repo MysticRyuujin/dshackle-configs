@@ -4,7 +4,9 @@ upstreams:
     role: fallback
     priority: 50
     options:
-      disable-validation: true
+      disable-validation: false
+      validate-peers: false
+      validate-syncing: true
     connection:
       ethereum:
         rpc:

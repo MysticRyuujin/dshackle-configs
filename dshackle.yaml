@@ -55,6 +55,7 @@ cluster:
     - "chainstack.yaml"
     - "coinbase.yaml"
     - "infura.yaml"
+    - "quicknode.yaml"
     - "rivet.yaml"
     # Public Nodes
     - "cloudflare.yaml"

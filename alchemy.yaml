@@ -4,7 +4,9 @@ upstreams:
     role: fallback
     priority: 90
     options:
-      disable-validation: true
+      disable-validation: false
+      validate-peers: false
+      validate-syncing: true
     methods:
       enabled:
         # Manually Enabled
